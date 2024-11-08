@@ -1,10 +1,13 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-weight: 150;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 .container {
   width: 100vw;
-  height: 85vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,13 +21,16 @@ body {
 }
 .header a {
   padding-right: 20px;
-  font-size: small;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
 }
 .google-apps-dot {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 50px;
-  background-color: rgb(165, 163, 163);
+  background-color: rgb(0, 0, 0);
   flex: 1;
   margin: 1px;
 }
@@ -42,15 +48,78 @@ body {
   margin-right: 20px;
 }
 .google-profile {
-  background-color: beige;
-  width: 25px;
   height: 25px;
   margin-right: 20px;
+}
+.google-profile button {
+  background-color: #4286f4;
+  color: white;
+  font-size: 12px;
+  border: #4286f4;
+  padding: 5px;
+  border-radius: 4px;
+}
+.google-logo {
+  padding-bottom: 15px;
+}
+
+.search-bar {
+  display: flex;
+  border: 1px solid #dfe1e5;
+  border-radius: 50px;
+  margin: 10px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+.search-bar div {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.search-bar:hover {
+  box-shadow: 1px 1px 3px 1px #dfe1e5;
+}
+
+.search-bar input {
+  width: 425px;
+  height: 30px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+.container-button {
+  padding-top: 20px;
+  font-weight: 100;
+}
+.container-button button {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0;
+  padding: 10px;
+  padding-left: 19px;
+  padding-right: 19px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #f8f9fa;
+}
+.container-button button:hover {
+  border: 1px solid #dfe1e5;
 }
 
 footer {
   display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: #f2f2f2;
   flex-direction: column;
+  justify-content: end;
 }
 .footer-bottom {
   display: flex;
@@ -60,8 +129,9 @@ footer {
   display: flex;
   flex-direction: row;
   font-size: small;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex: 1;
+  padding-right: 10px;
 }
 .footer-right ul {
   display: flex;
@@ -70,18 +140,39 @@ footer {
   flex: 1;
   text-decoration: none;
 }
-
+.country {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  height: 35px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
 .footer-right ul li,
 .footer-left ul li {
   list-style-type: none;
-  font-size: small;
+  font-size: 12px;
+  font-weight: bolder;
+  color: black;
 }
 
 .footer-left {
   display: flex;
-  flex: 4;
+  flex: 1;
+  justify-content: start;
 }
 .footer-right {
   display: flex;
-  flex: 3;
+  flex: 1;
+  justify-content: end;
+}
+.footer-left ul {
+  max-width: 600px;
+}
+.footer-right ul {
+  max-width: 300px;
 }
